@@ -10,16 +10,12 @@ const handleSubmit = function (event){
     if(detailItem !==''){
         const storedDetails =$('<textarea>').text(detailItem)
     }
-}
+
+};
 detailFormEl.on("submit",handleSubmit)
 
-$(".saveBtn").click(
-    function() {
-       // must stringify the object before save
-       localStorage.setItem('storedDetails', JSON.stringify(storedDetails));
-    }
-);
 
 
+  
 
 
