@@ -27,9 +27,9 @@ const handleSubmit = function (event){
 
 // Computer calls will run this function when the page loads. 
 function init() {
-    // Computer gets stored results from localStorage
+    // Computer gets stored results from localStorage.
     var storedActivity = JSON.parse(localStorage.getItem("myActivity"));
-    // If myActivity were retrieved from localStorage, update the myActivity array to it
+    // If myActivity were retrieved from localStorage, update the myActivity array to it.
     if (storedActivity !== '') {
         myActivity = storedActivity;
         $('textarea[name="t09"]').val(myActivity[9]);
@@ -44,20 +44,31 @@ function init() {
       } 
     }
 
+    var currentHour=13;
+
+    // function is available to the computer after the document is loaded. 
     $(document).ready(function(){
+      // computer accesses all of the 'description' classes
     $('.description').each(function(){
-        var id = $(this).attr('id')
-        var i = parseInt(id.substring(1));
-        console.log(i)
-        console.log(i-currentHour);
+      // computer extracts the id associated with the 'description' for each 'description'
+        var timeBlock = $(this).attr('id')
+        // computer gets rid of the first character within timeBlock and then turns it into an integer.
+        var i = parseInt(timeBlock.substring(1));
+        // computer compares i to the current hour of the day to whether it is smaller,equal to or larger.
+        // if i is smaller it is in the past
+        // if i is equal to it is in the present
+        // if i is greater than it is in the future
+        // the computer then colour co-ordinates the timeblocks to whether they are in the: past, present or future by adding classes.
         if(i<currentHour){$(this).addClass("past")}
         if(i==currentHour){$(this).addClass("present")}
         if(i>currentHour){$(this).addClass("future")}
               });
           });
 
+    // when a user clicks any of the submit buttons it saves the information it updates the data in local storage.
     detailFormEl.on("submit",handleSubmit);
 
+    // computer runs init as the page loads and retrieves data from local storage.
     init()
 
 
