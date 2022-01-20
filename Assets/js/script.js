@@ -44,8 +44,6 @@ function init() {
       } 
     }
 
-    var currentHour=13;
-
     // function is available to the computer after the document is loaded. 
     $(document).ready(function(){
       // computer accesses all of the 'description' classes
