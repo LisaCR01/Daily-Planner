@@ -15,12 +15,12 @@ const handleSubmit = function (event){
     myActivity[9] = $("#9").val();
     myActivity[10] = $("#10").val();
     myActivity[11] = $("#11").val();
-    myActivity[12] = $("#9").val();
-    myActivity[13] = $("#11").val();
-    myActivity[14] = $("#12").val();
-    myActivity[15] = $("#13").val();
-    myActivity[16] = $("#14").val();
-    myActivity[17] = $("#15").val();
+    myActivity[12] = $("#12").val();
+    myActivity[13] = $("#13").val();
+    myActivity[14] = $("#14").val();
+    myActivity[15] = $("#15").val();
+    myActivity[16] = $("#16").val();
+    myActivity[17] = $("#17").val();
     // Stringify and set key in localStorage to myActivity array
     localStorage.setItem("myActivity", JSON.stringify(myActivity));
 }
