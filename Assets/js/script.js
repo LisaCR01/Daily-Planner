@@ -30,7 +30,7 @@ function init() {
     // Computer gets stored results from localStorage.
     var storedActivity = JSON.parse(localStorage.getItem("myActivity"));
     // If myActivity were retrieved from localStorage, update the myActivity array to it.
-    if (storedActivity !== '') {
+    if (storedActivity !== null) {
         myActivity = storedActivity;
         $('textarea[name="t09"]').val(myActivity[9]);
         $('textarea[name="t10"]').val(myActivity[10]);
