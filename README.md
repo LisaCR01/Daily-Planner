@@ -22,7 +22,12 @@ An error I saw with the starter code, was the colour palette used in css for the
 * When the user refreshes the page, then the saved events persist.
 
 ## Deployed Application
-![Deployed Application](./Deployed_Application.png?raw=true)
+
+## Shown on two different days at different times to highlight the use of moments
+
+![Deployed Application](./Assets/Images/Deployed_Application.png?raw=true)
+
+![Deployed Application](./AAssets/Images/Deployed_Application_2.png?raw=true)
 
 [Link to Deployed Application](https://lisacr01.github.io/Daily-Planner/)
 
