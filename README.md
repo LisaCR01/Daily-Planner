@@ -4,6 +4,14 @@ In this project I created a simple calendar application that allows a user to sa
 
 An error I saw with the starter code, was the colour palette used in css for the the time blocks. The use of red and green of similar tonality would be difficult for someone with colour blindness to tell the difference between, so I altered the colours with the use of http://web-accessibility.carnegiemuseums.org/design/color/ to make a more accessible colour palette.
 
+## Technologies Used
+
+* HTML
+* JQuery
+* Bootstrap
+* JavaScript
+* Moment.js Library
+
 ## Criteria that I met to achieve this
 
 * When the user opens the planner, the current day is displayed at the top.
