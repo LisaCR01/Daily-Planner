@@ -25,3 +25,7 @@ An error I saw with the starter code, was the colour palette used in css for the
 ![Deployed Application](./Deployed_Application.png?raw=true)
 
 [Link to Deployed Application](https://lisacr01.github.io/Daily-Planner/)
+
+## Contact Information
+
+My Email:[lcrgunn@gmail.com](mailto:lcrgunn@gmail.com)
